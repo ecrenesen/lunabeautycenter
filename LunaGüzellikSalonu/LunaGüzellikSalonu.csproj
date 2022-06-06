@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{081596A8-FC14-48FB-90C4-BF9D750B250E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>LunaGüzellikSalonu</RootNamespace>
+    <AssemblyName>LunaGüzellikSalonu</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.27.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CalisanBerkan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalisanBerkan.Designer.cs">
+      <DependentUpon>CalisanBerkan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CalisanMeltem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalisanMeltem.Designer.cs">
+      <DependentUpon>CalisanMeltem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormToptancıİletisimcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormToptancıİletisimcs.Designer.cs">
+      <DependentUpon>FormToptancıİletisimcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCalisan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCalisan.Designer.cs">
+      <DependentUpon>FrmCalisan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHediyeÇeki.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHediyeÇeki.Designer.cs">
+      <DependentUpon>FrmHediyeÇeki.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStok.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStok.Designer.cs">
+      <DependentUpon>FrmStok.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHizmetler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHizmetler.Designer.cs">
+      <DependentUpon>FrmHizmetler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMarket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMarket.Designer.cs">
+      <DependentUpon>FrmMarket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRandevu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRandevu.Designer.cs">
+      <DependentUpon>FrmRandevu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAnasayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAnasayfa.Designer.cs">
+      <DependentUpon>FrmAnasayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CalisanBerkan.resx">
+      <DependentUpon>CalisanBerkan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalisanMeltem.resx">
+      <DependentUpon>CalisanMeltem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormToptancıİletisimcs.resx">
+      <DependentUpon>FormToptancıİletisimcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCalisan.resx">
+      <DependentUpon>FrmCalisan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHediyeÇeki.resx">
+      <DependentUpon>FrmHediyeÇeki.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHizmetler.resx">
+      <DependentUpon>FrmHizmetler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAnasayfa.resx">
+      <DependentUpon>FrmAnasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMarket.resx">
+      <DependentUpon>FrmMarket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRandevu.resx">
+      <DependentUpon>FrmRandevu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStok.resx">
+      <DependentUpon>FrmStok.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye-mascara.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\skincare.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\serum.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\makeup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\make-up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sunscreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\serum %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shower-gel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vitamin-c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cotton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\message.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\send.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\question.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dialog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\schedule.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dialog1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nail1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\schedule1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dialog2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\love.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\store.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doktor2-1024x1024.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Female-Doctor-PNG-Photo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\indir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-medicine-physician-stethoscope-the-doctor-miscellaneous-child-face.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-cartoon-hand-drawn-nurse-holding-a-needle-png-image_2619218.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2022-06-01 at 14.15.33.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\history.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\click.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\click1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notepad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log-out.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
